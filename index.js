@@ -20,7 +20,9 @@ app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: false}));
 
 app.set('views', './app/views');
-app.set('view engine', 'ejs'); 
+app.set('view engine', 'ejs');
+
+app.use('/static', express.static(__dirname + '/app/views/assets'));
 
 // required for passport
 app.use(session({ secret: 'barneyshometown' })); 

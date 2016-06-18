@@ -1,14 +1,14 @@
 var mongoose = require('mongoose');
 
-var mongoLabUri = 'USE MONGODB URI'
+var mongoDbUri = 'UPDATE_MONGO_DATABASE_URL'
 
-mongoose.connect(mongoLabUri);
+mongoose.connect(mongoDbUri);
 
 /**
  * Connection Event Handlers
  */
 mongoose.connection.on('connected', function () {
-    console.log('Mongoose connected to ' + mongoLabUri);
+    console.log('Mongoose connected to ' + mongoDbUri);
 });
 
 mongoose.connection.on('error', function (error) {
