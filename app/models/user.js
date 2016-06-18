@@ -9,5 +9,4 @@ var userSchema = Schema({
 		name : { type : String}
 	}
 });
-
 module.exports = mongoose.model('user_model', userSchema);
