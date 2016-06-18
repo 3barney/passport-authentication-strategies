@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var mongoLabUri = 'mongodb://barney:barney54321@ds019054.mlab.com:19054/passport-strategies'
+var mongoLabUri = 'USE MONGODB URI'
 
 mongoose.connect(mongoLabUri);
 
